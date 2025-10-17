@@ -16,7 +16,7 @@ void main(List<String> args) {
   my_list.remove(3);
   my_list.removeAt(2);
   print(my_list);
-  if(my_list.contains("muhammed")){
+  if(my_list.contains("muhammed")){// contains bu elemanın liste içinde olup olmadığının kontrol eder.
     print("listede muhammed var"); 
   }
   else{
