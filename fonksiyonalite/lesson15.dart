@@ -1,18 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
 
-void main(List<String> args) {
-  allname();
-  /*allname2();
-  x();
-  Set<String> isimler = {"muhammed","taşkın","emir"};
-  bool sonuc = isimler.remove("muhammed");
-  print("sonuc:"+sonuc.toString());muhammedi silip silmediğini öğreniriz.
-  Set<int> no = Set.from([1,2,3,4,5,1,3,4,2,]); bu şekilde içindeki listeyi düzenliyoruz*/
-}
-
 allname(){
-  Set<dynamic> isimler = [].toSet();
+  List<dynamic> isimler = [];
   stdout.write("İsimleri giriniz:");// isimlerin girilmesine dair bilgi verdik.
   String? input = stdin.readLineSync(encoding: utf8);// utf8 formatında okumasını sağladık.
 
@@ -24,8 +14,21 @@ allname(){
   else{
     print("Herhangi bir isim girilmedi");
   }
-  print(isimler);
+  return isimler;
 }
+ayikla(){
+  List allnamelast = allname();
+  Set ayik = {...allnamelast};
+
+  print(ayik);
+  
+}
+
+
+
+
+
+
 allname2(){
   stdout.write("Soyadları giriniz:");
   String? input = stdin.readLineSync(encoding: utf8);
@@ -61,3 +64,13 @@ void x() {
   }
 }
 
+void main(List<String> args) {
+  //allname();
+  ayikla();
+  /*allname2();
+  x();
+  Set<String> isimler = {"muhammed","taşkın","emir"};
+  bool sonuc = isimler.remove("muhammed");
+  print("sonuc:"+sonuc.toString());muhammedi silip silmediğini öğreniriz.
+  Set<int> no = Set.from([1,2,3,4,5,1,3,4,2,]); bu şekilde içindeki listeyi düzenliyoruz*/
+}
