@@ -43,10 +43,12 @@ class BurcListesi extends StatelessWidget {
       body: ListView.builder(
         itemCount: burclar.length,
         itemBuilder: (context, index) {
+
           return Card(
             margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             child: ListTile(
               tileColor: Colors.white,
+
               title: Text(
                 burclar[index],
                 style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
@@ -98,6 +100,14 @@ class BurcDetaySayfasi extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
 
 class Strings {
   Strings() {
